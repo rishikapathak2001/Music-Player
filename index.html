@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="https://i.scdn.co/image/ab67616d0000b273320a611222e836b660d3d283" alt="Song Image" class="song-img">
+            <h1>Ajj Din Chadheya</h1>
+            <p>Harshdeep Kaur</p>
+            <audio  id="song">
+                <source src="aj din.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div> <i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"> <i class="fa-solid fa-play" id="controlicon"></i></div>
+
+                <div> <i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
